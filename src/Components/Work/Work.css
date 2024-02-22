@@ -1,0 +1,165 @@
+
+.work-container { 
+    margin-top:6rem;
+    display:flex;
+    flex: 1;
+    position: relative; 
+    gap:2rem;
+   
+}
+
+.work-left {
+    display:flex;
+    flex-direction:column;      
+}
+
+.work-left span:nth-of-type(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size:2.5rem;
+}
+
+.work-left span:nth-of-type(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size:2.5rem;
+}
+
+.work-left span:nth-of-type(3){
+    font-size: 16px;
+    margin-top:1.5rem;
+    padding-right: 4rem;
+}
+
+.work-left :nth-child(4){
+    margin-top:3rem;
+    width:40vw;
+    height:10vh;
+
+}
+
+/* WORK RIGHT CSS PART */
+
+.work_right{
+    padding: 4rem 0rem;
+    position: relative;
+}
+.white_mcircle{
+    background-color:white;
+    height:15rem;
+    width:15rem;
+    border-radius:100%;
+    box-shadow:var(--smboxShadow);
+
+    position: relative;
+    top: 0rem;
+    right: 2rem;
+ 
+}
+.blue{
+    background-color:#1949b8;
+    top: 0.5rem;
+    right: -0.5rem;
+    position: relative; 
+}
+.w_circle{
+    position: absolute;
+    height:11rem;
+    width:11rem;
+    border-radius:100%;
+    z-index: -1;
+}
+.yellow{
+    background-color:#f5c32c;
+    bottom: 9rem;
+    right: -5rem;
+    position: relative;
+  
+}
+.sec_circle{
+    width:6rem;
+    height:6rem;
+    border-radius: 100%;
+    border:5px solid #ebebeb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:"none";
+    box-shadow:var(--smboxShadow);
+    background:white;
+
+    position:absolute;
+    transform: scale(0.4);
+}
+.sec_circle{
+    padding:2rem;
+}
+
+.work_brand :nth-child(1)
+{
+    top: 2rem;
+    left: -6rem;
+}
+.work_brand :nth-child(2)
+{
+    bottom:-6rem;
+    left: 2rem;
+    
+}
+.work_brand :nth-child(3)
+{
+    top: 2rem;
+    right: 3rem;
+}
+.work_brand :nth-child(4)
+{
+    top: 2rem;
+    right: -6rem;
+}
+.work_brand :nth-child(5)
+{
+    top: -6rem;
+    right: 3rem;
+}
+
+@media screen and (max-width: 900px)
+{
+    .work-section{
+        transform: scale(0.9);
+        gap: 3rem;
+    }
+    .work_right{
+        margin-right: -3rem;
+        transform: scale(0.9);;
+    }
+    .work-left{
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .work-container
+    {
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .work-section{
+        margin: -2rem;
+    }
+    .work-left{
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .work-container{
+        padding-left: 1rem;
+    }
+    .work_design{
+        transform:scale(0.8);    
+        margin-right: 0.1rem;
+    }
+   
+}

@@ -1,0 +1,56 @@
+.nav-left{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 2rem;
+
+}
+.nav_section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:10vh;
+}
+.nav-name{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+{/* RIGHT SIDE OF THE NAVIGATION BAR */}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 400;
+}
+  
+.nav-list {
+    flex: 10;
+}
+.nav-list > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+  
+.nav-list > ul :hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+  
+.nav-button {
+    flex: 2;
+}
+  
+@media screen and (max-width: 950px) {
+    .nav-list {
+      display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav-list {
+      display: none;
+    }
+}

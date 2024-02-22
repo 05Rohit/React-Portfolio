@@ -1,0 +1,102 @@
+.services {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 30rem;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+    /* scroll view */
+    padding-top: 3rem;
+    gap: 10rem;
+  }
+  /* left side */
+  .awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    /* gap: 2rem; */
+    margin-top: 1rem;
+  }
+  
+  .awesome > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesome > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesome > :nth-child(3) {
+    font-size: 1em;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+  }
+  .s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 5rem;
+  }
+
+{/*SERVICE RIGHT SIDE CSS*/}
+
+.cards {
+    position: relative;
+    transform: scale(0.8);
+    margin-top: 2rem;
+  }
+  .cards > * {
+    position: absolute;
+  }
+  
+{/*MEDIA QUERY*/}
+
+ @media screen and (max-width:990px) 
+{
+    .services{
+        transform: scale(0.8);
+        padding: 0;
+        margin-left: -3rem;
+    }   
+    
+}
+ 
+@media screen and (max-width: 750px) 
+{
+    .services {
+      margin-top: 0;  
+      flex-direction: column;
+      gap: 0rem;
+      height: 66rem;
+      padding-left: 1rem;
+      width: 140%;
+    }
+    .awesome{
+        width: 90%;
+        margin-left: -3rem;  
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 17rem;
+    }
+    .cards > * {
+      position: static;
+    }
+    .awesome > :nth-child(3) 
+    {
+        color: var(--gray);
+        font-size: 22px;
+        margin-top: 3rem;
+    } 
+}
+    
+@media screen and (max-width: 480px)
+{
+  .awesome{
+    margin-left: 0;
+  }
+} 
